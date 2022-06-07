@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity implements 	View.OnClickList
         //Submit/Reset
         btnSubmit = (Button) findViewById(R.id.btnSubmit);
         btnReset = (Button) findViewById(R.id.btnReset);
-//        btnSettings = (Button) findViewById(R.id.btnSettings);
+        btnSettings = (Button) findViewById(R.id.btnSettings);
 
 //        /*Add in Oncreate() funtion after setContentView()*/
 //        ToggleButton simpleToggleButton = (ToggleButton) findViewById(R.id.simpleToggleButton); // initiate a toggle button
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity implements 	View.OnClickList
         btnRemoveDefender.setOnClickListener(this);
         btnSubmit.setOnClickListener(this);
         btnReset.setOnClickListener(this);
-//        btnSettings.setOnClickListener(this);
+        btnSettings.setOnClickListener(this);
 
 //        btnSettings.setOnClickListener(view -> {
 //            Intent intent = new Intent(this,SettingsActivity.class);
@@ -138,20 +138,26 @@ public class MainActivity extends AppCompatActivity implements 	View.OnClickList
                 break;
 
             case R.id.btnReset:
+                txtValue.setText("0.0");
                 AttackingArmiesCount = 2;
                 DefenderArmiesCount = 1;
                 txtAttackingArmyCount.setText("" + AttackingArmiesCount);
                 txtDefenderArmyCount.setText("" + DefenderArmiesCount);
                 break;
 
-//            case R.id.btnSettings:
-//                Intent intent = new Intent(getApplicationContext(), SettingsActivity.class);
-//                startActivity(intent);
-//                break;
-//                }
-        }
+            case R.id.btnSettings:
+                openNewActivity();
+                break;
+                }
     }
-}
+
+    private void openNewActivity() {
+        Intent intent = new Intent(this, SettingsActivity.class);
+        startActivity(intent);
+    }
+    }
+
+
 
 
 
