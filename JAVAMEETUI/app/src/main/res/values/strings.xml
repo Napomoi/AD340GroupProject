@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">JAVA MEET UI</string>
+    <string name="app_name">Risk Battle Odds Calculator</string>
+    <string name="StopAttackatThree" />
 </resources>
