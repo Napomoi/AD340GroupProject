@@ -28,6 +28,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/attackersWinningPercent"/>
 
+    <ToggleButton
+        android:id="@+id/tb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="ToggleButton 1"
+        android:textOff="End attack at 3 Armies is Off"
+        android:textOn="End attack at 3 Armies is On" />
+
 
     <TextView
         android:id="@+id/attackingArmies"
@@ -38,7 +49,7 @@
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtValue"/>
+        app:layout_constraintTop_toBottomOf="@+id/tb1"/>
 
 
     <Button
@@ -156,5 +167,10 @@
         app:layout_constraintTop_toBottomOf="@+id/btnReset"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
