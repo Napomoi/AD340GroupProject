@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Risk Battle Odds Calculator</string>
     <string name="StopAttackatThree" />
+    <string name="blue">Blue</string>
+    <string name="red">Red</string>
+    <string name="green">Green</string>
+    <string name="black">Black</string>
+    <string name="settings">Settings</string>
 </resources>

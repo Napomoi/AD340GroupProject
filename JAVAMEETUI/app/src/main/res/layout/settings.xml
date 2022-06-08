@@ -14,49 +14,54 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="Settings"
-        android:textSize="32dp"/>
+        android:text="@string/settings"
+        android:textSize="32sp"/>
 
-<!--    <RadioGroup-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:orientation="vertical"-->
-<!--        android:id="@+id/rdGroup"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/welcomeToSecondActivity">-->
-<!--        <RadioButton-->
-<!--            android:id="@+id/rdbBlue"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:padding="14dp"-->
-<!--            android:layout_marginLeft="100dp"-->
-<!--            android:text="Blue"-->
-<!--            android:textColor="DodgerBlue"-->
-<!--            android:onClick="onRadioButtonClicked"/>-->
-<!--        <RadioButton-->
-<!--            android:id="@+id/rdbRed"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:padding="10dp"-->
-<!--            android:layout_marginLeft="100dp"-->
-<!--            android:text="Red"-->
-<!--            android:onClick="onRadioButtonClicked"/>-->
-<!--        <RadioButton-->
-<!--            android:id="@+id/rdbGreen"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:padding="10dp"-->
-<!--            android:layout_marginLeft="100dp"-->
-<!--            android:text="Green"-->
-<!--            android:onClick="onRadioButtonClicked"/>-->
-<!--        <RadioButton-->
-<!--            android:id="@+id/rdbBlack"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:padding="10dp"-->
-<!--            android:layout_marginLeft="100dp"-->
-<!--            android:text="Black"-->
-<!--            android:onClick="onRadioButtonClicked"/>-->
-<!--    </RadioGroup>-->
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/rdGroup"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeToSecondActivity">
+        <RadioButton
+            android:id="@+id/rdbBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:layout_marginStart="100dp"
+            android:text="@string/blue"
+            android:textColor="DodgerBlue"
+            android:onClick="onRadioButtonClicked"
+            />
+
+        <RadioButton
+            android:id="@+id/rdbRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginStart="100dp"
+            android:text="@string/red"
+            android:onClick="onRadioButtonClicked"
+            />
+        <RadioButton
+            android:id="@+id/rdbGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginStart="100dp"
+            android:text="@string/green"
+            android:onClick="onRadioButtonClicked"
+            />
+        <RadioButton
+            android:id="@+id/rdbBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginStart="100dp"
+            android:text="@string/black"
+            android:onClick="onRadioButtonClicked"
+            />
+    </RadioGroup>
 
 
     <Button

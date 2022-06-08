@@ -2,4 +2,9 @@
 <resources>
     <item name="btnBack" type="id" />
     <item name="toggleButton" type="id" />
+    <item name="rdbRed" type="id" />
+    <item name="rdGroup" type="id" />
+    <item name="rdbBlue" type="id" />
+    <item name="rdbGreen" type="id" />
+    <item name="rdbBlack" type="id" />
 </resources>
