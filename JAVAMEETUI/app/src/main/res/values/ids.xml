@@ -7,4 +7,5 @@
     <item name="rdbBlue" type="id" />
     <item name="rdbGreen" type="id" />
     <item name="rdbBlack" type="id" />
+    <item name="btnSingleBattle" type="id" />
 </resources>
