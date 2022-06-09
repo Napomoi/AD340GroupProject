@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements 	View.OnClickList
     private ToggleButton simpleToggleButton;
     private Button btnSubmit;
     private Button btnReset;
+    private Button btnSingleBattle;
     private ToggleButton toggleButton;
     private BreakIterator ToggleTextview;
     private Intent SettingsActivity;
@@ -68,6 +69,7 @@ public class MainActivity extends AppCompatActivity implements 	View.OnClickList
         btnSubmit = (Button) findViewById(R.id.btnSubmit);
         btnReset = (Button) findViewById(R.id.btnReset);
         btnSettings = (Button) findViewById(R.id.btnSettings);
+        btnSingleBattle = (Button) findViewById(R.id.btnSingleBattle);
         toggleButton = (ToggleButton) findViewById(R.id.toggleButton);
 
 
@@ -79,6 +81,7 @@ public class MainActivity extends AppCompatActivity implements 	View.OnClickList
         btnSubmit.setOnClickListener(this);
         btnReset.setOnClickListener(this);
         btnSettings.setOnClickListener(this);
+//        btnSingleBattle.setOnClickListener(this);
         }
 
     @Override
@@ -165,9 +168,11 @@ public class MainActivity extends AppCompatActivity implements 	View.OnClickList
     }
 
 //    private void openNewActivity4() {
-//        Intent intent4 = new Intent(this, BattleOdds.class);
+//        Intent intent4 = new Intent(this, SingleBattle.class);
 //        startActivity(intent4);
 //    }
+
+
 }
 
 

@@ -21,6 +21,11 @@
             android:name=".SettingsActivity"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".SingleBattle"
+            android:exported="true">
+        </activity>
+
     </application>
 
 </manifest>
