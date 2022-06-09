@@ -140,9 +140,9 @@ public class MainActivity extends AppCompatActivity implements 	View.OnClickList
                 openNewActivity();
                 break;
 
-//            case R.id.btnSingleBattle:
-//                openNewActivity4();
-//                break;
+            case R.id.btnSingleBattle:
+                openNewActivity4();
+                break;
 
             case R.id.toggleButton:
                         toggleButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -162,15 +162,17 @@ public class MainActivity extends AppCompatActivity implements 	View.OnClickList
         }
     }
 
+    private void openNewActivity4() {
+        Intent intent = new Intent(this, SingleBattle.class);
+        startActivity(intent);
+    }
+
     private void openNewActivity() {
         Intent intent = new Intent(this, SettingsActivity.class);
         startActivity(intent);
     }
 
-//    private void openNewActivity4() {
-//        Intent intent4 = new Intent(this, SingleBattle.class);
-//        startActivity(intent4);
-//    }
+
 
 
 }
