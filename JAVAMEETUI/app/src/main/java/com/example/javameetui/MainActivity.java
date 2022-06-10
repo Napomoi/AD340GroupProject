@@ -71,9 +71,11 @@ public class MainActivity extends AppCompatActivity implements 	View.OnClickList
         btnSettings = (Button) findViewById(R.id.btnSettings);
         btnSingleBattle = (Button) findViewById(R.id.btnSingleBattle);
         toggleButton = (ToggleButton) findViewById(R.id.toggleButton);
+        btnSingleBattle = (Button) findViewById(R.id.btnSingleBattle);
 
 
         // Listen for all the button clicks
+//        btnSingleBattle.setOnClickListener(this);
         btnAddAttacker.setOnClickListener(this);
         btnRemoveAttacker.setOnClickListener(this);
         btnAddDefender.setOnClickListener(this);
@@ -81,7 +83,8 @@ public class MainActivity extends AppCompatActivity implements 	View.OnClickList
         btnSubmit.setOnClickListener(this);
         btnReset.setOnClickListener(this);
         btnSettings.setOnClickListener(this);
-//        btnSingleBattle.setOnClickListener(this);
+        btnSettings.setOnClickListener(this);
+
         }
 
     @Override
@@ -144,31 +147,31 @@ public class MainActivity extends AppCompatActivity implements 	View.OnClickList
                 openNewActivity4();
                 break;
 
-            case R.id.toggleButton:
-                        toggleButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-           @Override
-          public void onCheckedChanged(CompoundButton toggleButton, boolean isChecked) {
-               Toast.makeText(getApplicationContext(), String.valueOf(isChecked), Toast.LENGTH_SHORT).show();
-//                 if (isChecked == true) {
-////                     isChecked = false;
-//                      Toast.makeText(getApplicationContext(), "End attack at 3 Armies is On bbbbbbbbbbb", Toast.LENGTH_SHORT).show();
-//                 } else {
-////                     isChecked = true;
-//                     Toast.makeText(getApplicationContext(), "End attack at 3 Armies is Off", Toast.LENGTH_SHORT).show();
+//            case R.id.toggleButton:
+//                        toggleButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+//           @Override
+//          public void onCheckedChanged(CompoundButton toggleButton, boolean isChecked) {
+//               Toast.makeText(getApplicationContext(), String.valueOf(isChecked), Toast.LENGTH_SHORT).show();
+////                 if (isChecked == true) {
+//////                     isChecked = false;
+////                      Toast.makeText(getApplicationContext(), "End attack at 3 Armies is On bbbbbbbbbbb", Toast.LENGTH_SHORT).show();
+////                 } else {
+//////                     isChecked = true;
+////                     Toast.makeText(getApplicationContext(), "End attack at 3 Armies is Off", Toast.LENGTH_SHORT).show();
+////                }
 //                }
-                }
-            });
-            break;
+//            });
+//            break;
         }
-    }
-
-    private void openNewActivity4() {
-        Intent intent = new Intent(this, SingleBattle.class);
-        startActivity(intent);
     }
 
     private void openNewActivity() {
         Intent intent = new Intent(this, SettingsActivity.class);
+        startActivity(intent);
+    }
+
+    private void openNewActivity4() {
+        Intent intent = new Intent(this, SingleBattle.class);
         startActivity(intent);
     }
 
